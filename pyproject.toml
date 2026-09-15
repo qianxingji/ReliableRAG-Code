@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reliablerag-research"
+version = "0.1.0"
+description = "Code and aggregate verification for paired RAG repair selection"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Xingji Qian", email = "102511283@hbut.edu.cn"}]
+dependencies = [
+  "numpy>=1.26,<3",
+  "scipy>=1.11,<2",
+  "scikit-learn>=1.4,<2",
+]
+
+[project.optional-dependencies]
+neural = ["transformers>=4.45,<5", "sentencepiece==0.2.1", "safetensors>=0.4.5"]
+
+[tool.setuptools]
+packages = ["src", "src.arbitration", "src.evaluation", "src.mars", "src.verification"]

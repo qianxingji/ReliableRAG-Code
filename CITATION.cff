@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript."
+title: "ReliableRAG: Supervision-Matched Selection of Paired RAG Repairs"
+type: software
+authors:
+  - family-names: Qian
+    given-names: Xingji
+    affiliation: Hubei University of Technology
+    email: 102511283@hbut.edu.cn
+repository-code: "https://github.com/qianxingji/ReliableRAG-Code"
+version: 0.1.0
+date-released: 2026-09-15
+license: Apache-2.0

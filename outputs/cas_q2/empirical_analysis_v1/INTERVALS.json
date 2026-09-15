@@ -1,0 +1,210 @@
+{
+  "draws": 20000,
+  "interval_family_size": 6,
+  "adjusted_quantiles": [
+    0.004166666666666667,
+    0.9958333333333333
+  ],
+  "unadjusted_quantiles": [
+    0.025,
+    0.975
+  ],
+  "quantile_method": "linear",
+  "denominator": 18000,
+  "reallocated": {
+    "comparisons": [
+      {
+        "left": "ROA-FULL",
+        "right": "HGB_GBV_R",
+        "endpoints": {
+          "em_difference_pp": {
+            "point_pp": 0.044444444444444446,
+            "adjusted_percentile_range_pp": [
+              -0.13333333333333333,
+              0.2037268518518532
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.08888888888888889,
+              0.16111111111111112
+            ],
+            "adjusted_direction": "inconclusive"
+          },
+          "damage_rate_difference_pp": {
+            "point_pp": 0.06111111111111111,
+            "adjusted_percentile_range_pp": [
+              0.0,
+              0.1277777777777778
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              0.016666666666666666,
+              0.11111111111111112
+            ],
+            "adjusted_direction": "inconclusive"
+          }
+        },
+        "joint_em_improvement_and_damage_reduction": false
+      },
+      {
+        "left": "HGB_GBV_R",
+        "right": "HGB_ONLY_R",
+        "endpoints": {
+          "em_difference_pp": {
+            "point_pp": 0.05555555555555555,
+            "adjusted_percentile_range_pp": [
+              -0.15555555555555556,
+              0.31666666666666665
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.09444444444444444,
+              0.2555555555555556
+            ],
+            "adjusted_direction": "inconclusive"
+          },
+          "damage_rate_difference_pp": {
+            "point_pp": -0.08333333333333333,
+            "adjusted_percentile_range_pp": [
+              -0.18333333333333335,
+              -0.005555555555555556
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.15555555555555556,
+              -0.022222222222222223
+            ],
+            "adjusted_direction": "negative"
+          }
+        },
+        "joint_em_improvement_and_damage_reduction": false
+      },
+      {
+        "left": "HGB_GBV_R",
+        "right": "GBV_ONLY_R",
+        "endpoints": {
+          "em_difference_pp": {
+            "point_pp": 0.23333333333333334,
+            "adjusted_percentile_range_pp": [
+              0.07222222222222223,
+              0.43333333333333335
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              0.11666666666666667,
+              0.3888888888888889
+            ],
+            "adjusted_direction": "positive"
+          },
+          "damage_rate_difference_pp": {
+            "point_pp": -0.07222222222222222,
+            "adjusted_percentile_range_pp": [
+              -0.14444444444444446,
+              -0.02777777777777778
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.1277777777777778,
+              -0.03888888888888889
+            ],
+            "adjusted_direction": "negative"
+          }
+        },
+        "joint_em_improvement_and_damage_reduction": true
+      }
+    ],
+    "interval_role": "primary"
+  },
+  "fixed_action": {
+    "comparisons": [
+      {
+        "left": "ROA-FULL",
+        "right": "HGB_GBV_R",
+        "endpoints": {
+          "em_difference_pp": {
+            "point_pp": 0.044444444444444446,
+            "adjusted_percentile_range_pp": [
+              -0.13333333333333333,
+              0.22777777777777777
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.08888888888888889,
+              0.18333333333333335
+            ],
+            "adjusted_direction": "inconclusive"
+          },
+          "damage_rate_difference_pp": {
+            "point_pp": 0.06111111111111111,
+            "adjusted_percentile_range_pp": [
+              0.0,
+              0.1277777777777778
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              0.016666666666666666,
+              0.11111111111111112
+            ],
+            "adjusted_direction": "inconclusive"
+          }
+        },
+        "joint_em_improvement_and_damage_reduction": false
+      },
+      {
+        "left": "HGB_GBV_R",
+        "right": "HGB_ONLY_R",
+        "endpoints": {
+          "em_difference_pp": {
+            "point_pp": 0.05555555555555555,
+            "adjusted_percentile_range_pp": [
+              -0.2,
+              0.3111111111111111
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.13333333333333333,
+              0.24444444444444446
+            ],
+            "adjusted_direction": "inconclusive"
+          },
+          "damage_rate_difference_pp": {
+            "point_pp": -0.08333333333333333,
+            "adjusted_percentile_range_pp": [
+              -0.17222222222222222,
+              0.0
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.15,
+              -0.022222222222222223
+            ],
+            "adjusted_direction": "inconclusive"
+          }
+        },
+        "joint_em_improvement_and_damage_reduction": false
+      },
+      {
+        "left": "HGB_GBV_R",
+        "right": "GBV_ONLY_R",
+        "endpoints": {
+          "em_difference_pp": {
+            "point_pp": 0.23333333333333334,
+            "adjusted_percentile_range_pp": [
+              0.03888888888888889,
+              0.4277777777777778
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              0.08888888888888889,
+              0.37777777777777777
+            ],
+            "adjusted_direction": "positive"
+          },
+          "damage_rate_difference_pp": {
+            "point_pp": -0.07222222222222222,
+            "adjusted_percentile_range_pp": [
+              -0.1388888888888889,
+              -0.022222222222222223
+            ],
+            "secondary_unadjusted_95_range_pp": [
+              -0.11666666666666667,
+              -0.03333333333333333
+            ],
+            "adjusted_direction": "negative"
+          }
+        },
+        "joint_em_improvement_and_damage_reduction": true
+      }
+    ],
+    "interval_role": "secondary_sensitivity_same_draws"
+  }
+}

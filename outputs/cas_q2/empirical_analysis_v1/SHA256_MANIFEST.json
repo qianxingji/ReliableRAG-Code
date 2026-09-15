@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "path": "BOOTSTRAP_DRAWS.jsonl",
+      "sha256": "440bb3964335f49b56bfb68bab10e63ccd012ec34e540f3fdacf86687ff3221f",
+      "size_bytes": 22973475
+    },
+    {
+      "path": "BOOTSTRAP_QUESTION_WEIGHTS.u16le",
+      "sha256": "2839a77841f9dea83a68d1b4604bac8b67eafdf22360b229733d481359ea9650",
+      "size_bytes": 240000000
+    },
+    {
+      "path": "BOOTSTRAP_STORAGE.json",
+      "sha256": "ffb6917c2a8ddbf35804eb0e0e1febeace36ed92d82fb13833d100026ae1b0bb",
+      "size_bytes": 765
+    },
+    {
+      "path": "BUILD_RECEIPT.json",
+      "sha256": "fae3117e8dd3bd40fcc414d66834184389f280ebb566ed39a41d9d68d5fc5a5f",
+      "size_bytes": 3362564
+    },
+    {
+      "path": "EXECUTABLE_FREEZE.json",
+      "sha256": "c9564c43da696c88f2b3aaff06e4d2fcae63e78b8409b963f88774dad0746a40",
+      "size_bytes": 5744027
+    },
+    {
+      "path": "GROUP_ORDER_PRIVATE.jsonl",
+      "sha256": "639bed9b2c588a42aa6b186323333359d456a4b6bf6e6df4dbf6c6aa436c3077",
+      "size_bytes": 392745
+    },
+    {
+      "path": "INTERVALS.json",
+      "sha256": "6d454afeec7c125c0cc4d182556af6db214a867aa4f62f7a6fbd1e6e22b09331",
+      "size_bytes": 6254
+    },
+    {
+      "path": "POINT_ESTIMATES.json",
+      "sha256": "b03ddad8fa35f582a63403c029942104c3f5da1a961110edc2a62f09871f4d3b",
+      "size_bytes": 86331
+    }
+  ]
+}

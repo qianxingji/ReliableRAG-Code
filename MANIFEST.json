@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_CLEAN_PUBLIC_REPOSITORY_CANDIDATE_NOT_PUBLISHED",
+  "project_license": "Apache-2.0",
+  "repository_name": "ReliableRAG-Code",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 127,
+      "sha256": "e0a0ec25565f675c3c3e58f95ba242d3a5a81d35d7f9d1bcc194ad7362fc3fa6",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "size_bytes": 426,
+      "sha256": "636b76c5cfff236b1d07c71cec507669fd867a185089e1dd737f659906fd060d",
+      "class": "project_code"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 203,
+      "sha256": "33b1793a458c621e751668577ecf9f3c36ef18722aa02ee8c6206a7780e987e4",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 444,
+      "sha256": "978a7c654873ee32c6f9939a023d09faf910c69643f86376e6e64b28e73b7ffa",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "CODE_AVAILABILITY.md",
+      "size_bytes": 758,
+      "sha256": "bd38416e8ed3896e4e65a63f6be63e1a2df3e497b72bf008957511317ca73a90",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "DATA.md",
+      "size_bytes": 1042,
+      "sha256": "fb568f7a70cb0b2893135887985aba2bc799e9ac4c210022acd30dbc9b83d6a0",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "docs/CLAIM_EVIDENCE_SUMMARY.md",
+      "size_bytes": 3150,
+      "sha256": "25ef4c154f27021bdd37508a4258e712eb8c8367730f6545c3c6d35ce84c3d92",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "size_bytes": 2104,
+      "sha256": "0b405c43bfe97199e168f6e81c132d8dc45d72755184eeb36248a589254522c5",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "size_bytes": 1366,
+      "sha256": "6a70b39835c2ccaf71d4ed33f14acbbce72a821d67dfc466465cb231222f223c",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "LICENSE_SCOPE.md",
+      "size_bytes": 689,
+      "sha256": "1f988d464366a0cb36c2aeb80ceaa2e99ec8b3150e27343a4610c09f6246f91f",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "outputs/cas_q2/empirical_analysis_v1/INTERVALS.json",
+      "size_bytes": 6254,
+      "sha256": "6d454afeec7c125c0cc4d182556af6db214a867aa4f62f7a6fbd1e6e22b09331",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "outputs/cas_q2/empirical_analysis_v1/POINT_ESTIMATES.json",
+      "size_bytes": 86331,
+      "sha256": "b03ddad8fa35f582a63403c029942104c3f5da1a961110edc2a62f09871f4d3b",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "outputs/cas_q2/empirical_analysis_v1/SHA256_MANIFEST.json",
+      "size_bytes": 1331,
+      "sha256": "498b83e75538032de3711bd6ce190eac049631d8393c875744d83aa0318097f6",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 687,
+      "sha256": "b4fa9a83fc4cd3ad35e45474e7743b53fd99a03d1e32262c5d167af3c5a0fffc",
+      "class": "project_code"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3425,
+      "sha256": "9228bd925d721190611fb2c86804b4989f717be4cd90ff7ed437a30580ddc0dd",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 51,
+      "sha256": "bc99b5ad47f068a9095f4316507bfec1cc0a2f4ca5dccaccf4a74936c07008f7",
+      "class": "project_code"
+    },
+    {
+      "path": "scripts/empirical_analysis_math.py",
+      "size_bytes": 11397,
+      "sha256": "6f8c878c6b7a8a82ccd5c306e0fa6eb7184f2f32e1f07ea302c2ae5489e9340c",
+      "class": "project_code"
+    },
+    {
+      "path": "scripts/verify_cas_q3_claim_statistics.py",
+      "size_bytes": 6970,
+      "sha256": "5cab1545abd0648165aa2102790447165d06b4a6787275639643a12c82ca02d4",
+      "class": "project_code"
+    },
+    {
+      "path": "scripts/verify_repository.py",
+      "size_bytes": 2363,
+      "sha256": "9daa189f724c97f57ead568ffbc5f217e41b27dbbb5166bed02e37c284b8f34c",
+      "class": "project_code"
+    },
+    {
+      "path": "src/__init__.py",
+      "size_bytes": 49,
+      "sha256": "b487829d07586d15c05a2529d3a161e371145eb8f0b4ac7966c1c14337bc255a",
+      "class": "project_code"
+    },
+    {
+      "path": "src/arbitration/__init__.py",
+      "size_bytes": 27,
+      "sha256": "6fb2215f175807e0df8b171db70b13b165978d55b5d5f2c7a87d23ecc0c4d50d",
+      "class": "project_code"
+    },
+    {
+      "path": "src/arbitration/empirical_contract.py",
+      "size_bytes": 2133,
+      "sha256": "993bc25bf2c2114a5052e5d000fc7cdf7a03aa5fb5878439504a70c82cb1c95a",
+      "class": "project_code"
+    },
+    {
+      "path": "src/evaluation/__init__.py",
+      "size_bytes": 240,
+      "sha256": "d53aa5061824f99aa116be512193cbd46a118bd1801e4483bb69e6ea39078933",
+      "class": "project_code"
+    },
+    {
+      "path": "src/evaluation/answer_normalization.py",
+      "size_bytes": 1414,
+      "sha256": "bfc966a6f13608ae100f650dd67684114b94bb519a576029c5304c4fb4cf9d11",
+      "class": "project_code"
+    },
+    {
+      "path": "src/evaluation/batch_allocation.py",
+      "size_bytes": 2096,
+      "sha256": "4eb0ae3c5005b20567c609b47ff30bfa655b9ccea6696cf947dbfe43aa1606a4",
+      "class": "project_code"
+    },
+    {
+      "path": "src/mars/__init__.py",
+      "size_bytes": 72,
+      "sha256": "99ef81dfc7d42454f3cd460bf1c8faa14bad948686a1532b47cc536fb5462634",
+      "class": "project_code"
+    },
+    {
+      "path": "src/mars/state_symmetric.py",
+      "size_bytes": 9312,
+      "sha256": "3724b5ac77722b70cabdf2589379d5584942f34ec81f3f5a04f88e0665f8f717",
+      "class": "project_code"
+    },
+    {
+      "path": "src/verification/__init__.py",
+      "size_bytes": 31,
+      "sha256": "ccb7654dea32f960aedaf80198e534fe6f136e9da0b02288de326c690462d4bc",
+      "class": "project_code"
+    },
+    {
+      "path": "src/verification/gbv_nli.py",
+      "size_bytes": 9080,
+      "sha256": "b39650484adcb13d8f0c9764108fd7a103ed6bd0c2fb633c78a59b160a81ebfb",
+      "class": "project_code"
+    },
+    {
+      "path": "tests/test_public_core.py",
+      "size_bytes": 3425,
+      "sha256": "7e7e28be39f09eb9ebf18ad886987e952d4cdb6793b2b8e65ef43d1e231b37ff",
+      "class": "project_code"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size_bytes": 4906,
+      "sha256": "7186c75204c5289455fbbb38b60f5196c1a6e797827aa1a39b5e6703f6885c01",
+      "class": "documentation_or_aggregate"
+    }
+  ],
+  "excluded": [
+    "benchmark text and answers",
+    "generated answers",
+    "per-question outcomes and actions",
+    "model weights and learned estimators",
+    "private evidence and local paths",
+    "prior Git history"
+  ]
+}
