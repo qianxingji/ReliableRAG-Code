@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "LOCAL_CLEAN_PUBLIC_REPOSITORY_CANDIDATE_NOT_PUBLISHED",
+  "status": "PUBLIC_REPOSITORY_RELEASE",
   "project_license": "Apache-2.0",
   "repository_name": "ReliableRAG-Code",
   "files": [
@@ -30,8 +30,8 @@
     },
     {
       "path": "CODE_AVAILABILITY.md",
-      "size_bytes": 758,
-      "sha256": "bd38416e8ed3896e4e65a63f6be63e1a2df3e497b72bf008957511317ca73a90",
+      "size_bytes": 835,
+      "sha256": "cf4c88a887bec99b431584e36edf8ecbad49217032735240c3c2907de0e029cf",
       "class": "documentation_or_aggregate"
     },
     {
@@ -48,14 +48,14 @@
     },
     {
       "path": "docs/METHOD.md",
-      "size_bytes": 2104,
-      "sha256": "0b405c43bfe97199e168f6e81c132d8dc45d72755184eeb36248a589254522c5",
+      "size_bytes": 2737,
+      "sha256": "a16a704e95c50637ba1d804c02cbe0a2b50ee540ce3d6cdea17cb047a88599fb",
       "class": "documentation_or_aggregate"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "size_bytes": 1366,
-      "sha256": "6a70b39835c2ccaf71d4ed33f14acbbce72a821d67dfc466465cb231222f223c",
+      "size_bytes": 1903,
+      "sha256": "56fb65969af05ed980326e91298dab896fa3642e2b270db769c143ac1999f36e",
       "class": "documentation_or_aggregate"
     },
     {
@@ -96,8 +96,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3425,
-      "sha256": "9228bd925d721190611fb2c86804b4989f717be4cd90ff7ed437a30580ddc0dd",
+      "size_bytes": 3692,
+      "sha256": "099911f586e408cd3e31f891d88f20678a6efcbab7f41be71007d882d96b1753",
       "class": "documentation_or_aggregate"
     },
     {
@@ -138,8 +138,14 @@
     },
     {
       "path": "src/arbitration/empirical_contract.py",
-      "size_bytes": 2133,
-      "sha256": "993bc25bf2c2114a5052e5d000fc7cdf7a03aa5fb5878439504a70c82cb1c95a",
+      "size_bytes": 2597,
+      "sha256": "d2333b729bbb2af8b2ad0d20dbad5b5b1cdf8f45c34202e5ef6a2781b2dac764",
+      "class": "project_code"
+    },
+    {
+      "path": "src/arbitration/empirical_panel.py",
+      "size_bytes": 7246,
+      "sha256": "f38f500a4d7b1a9feee9247679754a10a6fdb01af13b3c79abc51fd257a8c3c5",
       "class": "project_code"
     },
     {
@@ -186,8 +192,8 @@
     },
     {
       "path": "tests/test_public_core.py",
-      "size_bytes": 3425,
-      "sha256": "7e7e28be39f09eb9ebf18ad886987e952d4cdb6793b2b8e65ef43d1e231b37ff",
+      "size_bytes": 4529,
+      "sha256": "526ce4310761a116ab4cd24965dd91ab71a1bbbee3842b55fb400a22d78da818",
       "class": "project_code"
     },
     {

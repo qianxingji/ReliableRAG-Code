@@ -7,6 +7,7 @@ import unittest
 import numpy as np
 
 from src.arbitration.empirical_contract import DATASETS, RETRIEVERS, split_development
+from src.arbitration.empirical_panel import fit_panel
 from src.evaluation import assess_pair_eligibility, normalize_answer
 from src.evaluation.batch_allocation import weighted_top_k
 from src.mars.state_symmetric import SYMMETRIC_FEATURE_NAMES, build_pair_record, matrix
@@ -64,6 +65,27 @@ class PublicCoreTests(unittest.TestCase):
         for part in ("fit", "cal"):
             groups = {(d, q) for d, _, q in parts[part]}
             self.assertTrue(all({(d, r, q) for r in RETRIEVERS} <= parts[part] for d, q in groups))
+
+    def test_current_recovery_head_fits_and_calibrates_disjoint_partitions(self):
+        keys = [("hotpotqa", "bm25", f"q{i}") for i in range(8)]
+        rows = {
+            key: {"eligible": True, "numeric": [float(i % 2), float(i % 2)]}
+            for i, key in enumerate(keys)
+        }
+        outcomes = {
+            key: {"a0_em": int(i % 2 == 0), "a1_em": int(i % 2 == 1)}
+            for i, key in enumerate(keys)
+        }
+        partitions = {"fit": set(keys[:4]), "cal": set(keys[4:]), "probe": set(keys)}
+        events = []
+        model, predictions, ranking = fit_panel(
+            rows, outcomes, partitions, "HGB_GBV_R", "synthetic", events.append
+        )
+        self.assertEqual(model["feature_dimension"], 7)
+        self.assertEqual(model["target_counts"], {"fit": [2, 2], "cal": [2, 2]})
+        self.assertEqual(len(predictions), 8)
+        self.assertEqual([event["stage"] for event in events if event["event"] == "fit_completed"], ["base", "platt"])
+        self.assertTrue(ranking["ranking_unchanged_except_ties"])
 
 
 if __name__ == "__main__":

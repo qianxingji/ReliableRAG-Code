@@ -8,6 +8,7 @@ ReliableRAG studies a fixed post-generation decision: after the same reader has 
 
 - the byte-identical historical state-symmetric HGB feature and selector source used by the study;
 - the paired Generate-but-Verify NLI scoring component;
+- the supervision-matched logistic fitting and disjoint calibration procedure used by all five current heads;
 - fixed cohort, eligibility, top-K allocation, and aggregate analysis code;
 - sealed aggregate point estimates and confidence-interval summaries;
 - a standard-library verifier that checks 129 reporting statements; and
@@ -33,6 +34,7 @@ The aggregate command must report `PASS_CAS_Q3_STATISTICAL_STATEMENT_VERIFICATIO
 - `src/mars/state_symmetric.py`: authenticated historical 48-feature HGB implementation.
 - `src/verification/gbv_nli.py`: paired post-answering NLI scorer.
 - `src/arbitration/empirical_contract.py`: fixed development and fresh-cohort membership rules.
+- `src/arbitration/empirical_panel.py`: eligible-row preprocessing, L2-logistic fitting, and disjoint Platt calibration for the five current Recovery heads.
 - `src/evaluation/`: answer normalization and resampled top-K allocation.
 - `scripts/empirical_analysis_math.py`: frozen point-estimate and bootstrap arithmetic.
 - `outputs/cas_q2/empirical_analysis_v1/`: sealed aggregate results. The historical directory name is retained because its hashes are cited by the verifier; the paper's current target is CAS Q3.

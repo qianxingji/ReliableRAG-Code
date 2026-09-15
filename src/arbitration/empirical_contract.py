@@ -5,12 +5,21 @@ DATASETS = ("hotpotqa", "2wikimultihopqa", "musique")
 RETRIEVERS = ("bm25", "dense", "hybrid")
 FIELDS = {"ROA-FULL": list(range(11)), "ROA-NOGBV": list(range(10)),
           "HGB_GBV_R": [0, 10], "HGB_ONLY_R": [0], "GBV_ONLY_R": [10]}
+BASE = dict(C=1.0, solver="lbfgs", class_weight=None, max_iter=5000,
+            penalty="l2", tol=1e-4, fit_intercept=True, random_state=None)
+PLATT = dict(C=1e6, solver="lbfgs", class_weight=None, max_iter=2000,
+             penalty="l2", tol=1e-4, fit_intercept=True, random_state=None)
 FIT_PREFIX = "cas-q2-empirical-fit-v1|20260924"
 FRESH_PREFIX = "cas-q2-empirical-fresh-v1|20260925"
 
 
 def hash_order(prefix, dataset, sample_id):
     return hashlib.sha256(f"{prefix}|{dataset}|{sample_id}".encode("utf-8")).hexdigest(), sample_id
+
+
+def recovery_target(outcome):
+    """Return the current-head target: incorrect original, correct repair."""
+    return int(outcome["a0_em"] == 0 and outcome["a1_em"] == 1)
 
 
 def split_development(keys):
