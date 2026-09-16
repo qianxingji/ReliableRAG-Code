@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "status": "PUBLIC_REPOSITORY_RELEASE",
+  "schema_version": 2,
+  "status": "PUBLIC_NUMERIC_REPRODUCTION_RELEASE",
   "project_license": "Apache-2.0",
   "repository_name": "ReliableRAG-Code",
   "files": [
@@ -12,14 +12,14 @@
     },
     {
       "path": ".github/workflows/tests.yml",
-      "size_bytes": 426,
-      "sha256": "636b76c5cfff236b1d07c71cec507669fd867a185089e1dd737f659906fd060d",
+      "size_bytes": 554,
+      "sha256": "8bff3509d44d9329cd547eeb861a8ec3d5ba30c7bce8779cddc86dc22c85f0a9",
       "class": "project_code"
     },
     {
       "path": ".gitignore",
-      "size_bytes": 203,
-      "sha256": "33b1793a458c621e751668577ecf9f3c36ef18722aa02ee8c6206a7780e987e4",
+      "size_bytes": 215,
+      "sha256": "dd4af03279ef568b7671e5c3c2fb0a94046b0759dcab6593021e940973b3eaf3",
       "class": "documentation_or_aggregate"
     },
     {
@@ -30,14 +30,14 @@
     },
     {
       "path": "CODE_AVAILABILITY.md",
-      "size_bytes": 835,
-      "sha256": "cf4c88a887bec99b431584e36edf8ecbad49217032735240c3c2907de0e029cf",
+      "size_bytes": 1015,
+      "sha256": "a77a2555fa6862c939dc6a9a4e7c1d0368a876da45262c356d0a2b9a1b9e7310",
       "class": "documentation_or_aggregate"
     },
     {
       "path": "DATA.md",
-      "size_bytes": 1042,
-      "sha256": "fb568f7a70cb0b2893135887985aba2bc799e9ac4c210022acd30dbc9b83d6a0",
+      "size_bytes": 1680,
+      "sha256": "60eb207db2cccb8c83a5c7c2b0ecec9acd3d4f9faa65872e84c567cefe27535c",
       "class": "documentation_or_aggregate"
     },
     {
@@ -54,8 +54,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "size_bytes": 1903,
-      "sha256": "56fb65969af05ed980326e91298dab896fa3642e2b270db769c143ac1999f36e",
+      "size_bytes": 2532,
+      "sha256": "1e036c8b914e99954ded2e092b6cc0fd618d335af652b055d619fa4524da0650",
       "class": "documentation_or_aggregate"
     },
     {
@@ -66,8 +66,8 @@
     },
     {
       "path": "LICENSE_SCOPE.md",
-      "size_bytes": 689,
-      "sha256": "1f988d464366a0cb36c2aeb80ceaa2e99ec8b3150e27343a4610c09f6246f91f",
+      "size_bytes": 729,
+      "sha256": "313db5ad23bfcb1685b5c7df862b5a8acbdf886f6b2cb29b58f8066e0564e2e5",
       "class": "documentation_or_aggregate"
     },
     {
@@ -89,6 +89,12 @@
       "class": "documentation_or_aggregate"
     },
     {
+      "path": "outputs/reproduction_v1/TRACE_NUMERIC.jsonl.gz",
+      "size_bytes": 506509,
+      "sha256": "a930286d62bddf9f4837cb1beb4b863f0f94c1bc697b2311977a9b0eb18f09f7",
+      "class": "documentation_or_aggregate"
+    },
+    {
       "path": "pyproject.toml",
       "size_bytes": 687,
       "sha256": "b4fa9a83fc4cd3ad35e45474e7743b53fd99a03d1e32262c5d167af3c5a0fffc",
@@ -96,9 +102,15 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3692,
-      "sha256": "099911f586e408cd3e31f891d88f20678a6efcbab7f41be71007d882d96b1753",
+      "size_bytes": 4692,
+      "sha256": "d6bb752700cc85dba1361bf11aef1cfb4d9514443595aa39f6d542322c508593",
       "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "size_bytes": 101,
+      "sha256": "30428208ea3a9b7c8ffd75c19a26d3ce9da7be4c73af8a68fa35d50b1654121c",
+      "class": "project_code"
     },
     {
       "path": "requirements.txt",
@@ -113,6 +125,18 @@
       "class": "project_code"
     },
     {
+      "path": "scripts/reproduce_all.py",
+      "size_bytes": 670,
+      "sha256": "3ebe8c49fd5b4b42acfdb6fdb6a07954dc7db3a3dbfeff5ad3c249be29ca8925",
+      "class": "project_code"
+    },
+    {
+      "path": "scripts/reproduce_paper_statistics.py",
+      "size_bytes": 6585,
+      "sha256": "084adfbb1fadc04d238c527ceb1714f195097b88dc7d348222c6c9fcec37509f",
+      "class": "project_code"
+    },
+    {
       "path": "scripts/verify_cas_q3_claim_statistics.py",
       "size_bytes": 6970,
       "sha256": "5cab1545abd0648165aa2102790447165d06b4a6787275639643a12c82ca02d4",
@@ -120,8 +144,8 @@
     },
     {
       "path": "scripts/verify_repository.py",
-      "size_bytes": 2363,
-      "sha256": "9daa189f724c97f57ead568ffbc5f217e41b27dbbb5166bed02e37c284b8f34c",
+      "size_bytes": 3408,
+      "sha256": "2ae280a1470a97348edcf5b90680041e256c56ba3810db021275cc9981d620d8",
       "class": "project_code"
     },
     {
@@ -192,8 +216,8 @@
     },
     {
       "path": "tests/test_public_core.py",
-      "size_bytes": 4529,
-      "sha256": "526ce4310761a116ab4cd24965dd91ab71a1bbbee3842b55fb400a22d78da818",
+      "size_bytes": 5036,
+      "sha256": "9ec67feb79e60f4c094ca203ea4cfab7d3d2a66ed4b553197c31534d1516074e",
       "class": "project_code"
     },
     {
@@ -204,11 +228,10 @@
     }
   ],
   "excluded": [
-    "benchmark text and answers",
-    "generated answers",
-    "per-question outcomes and actions",
+    "benchmark text, original sample identifiers, and answers",
+    "generated answers and retrieved passages",
     "model weights and learned estimators",
-    "private evidence and local paths",
+    "development labels and private evidence",
     "prior Git history"
   ]
 }

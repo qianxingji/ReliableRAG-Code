@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Verify the clean public repository membership and content hashes."""
 from __future__ import annotations
-import hashlib, json, re
+import gzip, hashlib, json, re
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,6 +16,7 @@ def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def included(path):
     rel=path.relative_to(ROOT)
     return (path.is_file() and '.git' not in rel.parts and '__pycache__' not in rel.parts
+            and 'reproduced' not in rel.parts
             and not any(part.endswith('.egg-info') for part in rel.parts)
             and path.suffix.lower() not in {'.pyc','.pyo'} and path.name!='MANIFEST.json')
 def main():
@@ -37,5 +38,15 @@ def main():
     hgb=ROOT/'src/mars/state_symmetric.py'
     if sha(hgb)!='3724b5ac77722b70cabdf2589379d5584942f34ec81f3f5a04f88e0665f8f717': raise AssertionError('historical HGB source hash')
     checks+=1
+    numeric=ROOT/'outputs/reproduction_v1/TRACE_NUMERIC.jsonl.gz'
+    with gzip.open(numeric,'rt',encoding='utf-8',newline='') as stream:
+        numeric_rows=[json.loads(line) for line in stream]
+    expected={'dataset','retriever','group_id','eligible','forced_keep_reason','scores','actions','a0_em','a1_em','a0_f1','a1_f1'}
+    if len(numeric_rows)!=18000 or any(set(row)!=expected for row in numeric_rows): raise AssertionError('numeric reproduction schema/count')
+    if len({(row['dataset'],row['group_id']) for row in numeric_rows})!=6000: raise AssertionError('numeric reproduction group count')
+    if any(not re.fullmatch(r'q[0-9]{4}',row['group_id']) for row in numeric_rows): raise AssertionError('non-opaque public group ID')
+    numeric_text=json.dumps(numeric_rows,separators=(',',':'))
+    if 'sample_id' in numeric_text or re.search(r'(?<![0-9a-f])[0-9a-f]{24,32}(?![0-9a-f])',numeric_text): raise AssertionError('benchmark-like identifier in numeric release')
+    checks+=4
     print(json.dumps({'status':'PASS_CLEAN_PUBLIC_REPOSITORY','checks':checks,'files':len(declared),'scientific_fits':0,'model_forwards':0},indent=2))
 if __name__=='__main__': main()

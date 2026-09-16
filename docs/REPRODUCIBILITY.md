@@ -2,21 +2,38 @@
 
 ## Publicly runnable
 
-1. Install the Python package.
-2. Run the unit tests.
-3. Run `python scripts/verify_cas_q3_claim_statistics.py`.
-4. Run `python scripts/verify_repository.py`.
+1. Install `requirements-lock.txt`, then install the package with `--no-deps`.
+2. Run `python scripts/reproduce_all.py`.
 
-These checks authenticate the released sources and aggregate records, recompute reporting arithmetic, and confirm the stated Claim boundary. The unit suite performs one small synthetic base/calibration fit to exercise the released current-head procedure; it does not refit any paper model or execute a neural network. The two standalone verifiers perform zero fits and zero neural forwards.
+The workflow reads the text-free public numeric bundle, rebuilds all nine-policy
+point estimates, regenerates the fixed 20,000 dataset-stratified question-cluster
+draws from seed `20260926`, repeats global top-K allocation within every primary
+draw, computes the fixed-action sensitivity, and requires exact equality with
+the sealed public point and interval files. It also authenticates repository
+membership and reporting statements. On the tested environment the full
+statistical reconstruction completes in seconds.
+
+The unit suite performs one small synthetic base/calibration fit to exercise the
+released current-head procedure; it does not refit any paper model or execute a
+neural network. The full statistical reconstruction performs zero fits and zero
+neural forwards.
 
 ## Source inspection
 
 `src/mars/state_symmetric.py` is a byte-identical copy of the authenticated historical HGB source. The public `src/evaluation/__init__.py` is a minimal compatibility export for the released answer-normalization helper; it is not part of the historical HGB source hash.
 
-`src/arbitration/empirical_panel.py` and `src/arbitration/empirical_contract.py` expose the current five-head fitting contract described in the manuscript. They accept already assembled numeric rows and numeric development outcomes. Fitted paper parameters and the labeled rows from which they were learned are outside the public release.
+`src/arbitration/empirical_panel.py` and `src/arbitration/empirical_contract.py`
+expose the current five-head fitting contract described in the manuscript. They
+accept already assembled numeric rows and numeric development outcomes. Fitted
+paper parameters and the labeled development rows from which they were learned
+remain outside the public release. The released evaluation rows contain only
+opaque group identities, numeric policy scores/actions, and numeric EM/F1
+outcomes.
 
 ## Not publicly reproduced
 
 The complete 18,000-trace neural acquisition depends on benchmark-derived pools, pretrained snapshots, generated answers, learned estimators, and private execution receipts that are not redistributed. A retained 180-trace replay is a bounded witness, not a second complete run. Seven historical upstream estimators also lack original fit-time ID/matrix receipts and an independent original-fit witness. A reconstructed HGB fit reproduced all 1,539 historical scores exactly, while its serialized file differed only in saved CPU-thread metadata.
 
-No public command should be described as an end-to-end reproduction of the historical execution.
+The public command is a complete reproduction of the reported statistical layer
+from the realized numeric traces. It must not be described as an end-to-end
+reproduction of retrieval, generation, neural scoring, or historical training.

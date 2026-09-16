@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 from pathlib import Path
 import unittest
 
@@ -12,6 +13,8 @@ from src.evaluation import assess_pair_eligibility, normalize_answer
 from src.evaluation.batch_allocation import weighted_top_k
 from src.mars.state_symmetric import SYMMETRIC_FEATURE_NAMES, build_pair_record, matrix
 from src.verification.gbv_nli import format_hypothesis, resolve_entailment_index, split_passage_to_fit
+from scripts.empirical_analysis_math import point_estimates
+from scripts.reproduce_paper_statistics import load_panel
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -86,6 +89,14 @@ class PublicCoreTests(unittest.TestCase):
         self.assertEqual(len(predictions), 8)
         self.assertEqual([event["stage"] for event in events if event["event"] == "fit_completed"], ["base", "platt"])
         self.assertTrue(ranking["ranking_unchanged_except_ties"])
+
+    def test_public_numeric_bundle_rebuilds_all_point_estimates(self):
+        panel = load_panel()
+        rebuilt = json.loads(json.dumps(point_estimates(panel), allow_nan=False))
+        accepted = json.loads(
+            (ROOT / "outputs/cas_q2/empirical_analysis_v1/POINT_ESTIMATES.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(rebuilt, accepted)
 
 
 if __name__ == "__main__":
