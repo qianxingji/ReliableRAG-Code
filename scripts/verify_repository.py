@@ -18,7 +18,7 @@ def included(path):
     return (path.is_file() and '.git' not in rel.parts and '__pycache__' not in rel.parts
             and 'reproduced' not in rel.parts
             and not any(part.endswith('.egg-info') for part in rel.parts)
-            and path.suffix.lower() not in {'.pyc','.pyo'} and path.name!='MANIFEST.json')
+            and path.suffix.lower() not in {'.pyc','.pyo'} and rel.as_posix()!='MANIFEST.json')
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8')); checks=0
     declared={r['path']:r for r in manifest['files']}

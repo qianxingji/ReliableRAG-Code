@@ -89,6 +89,12 @@
       "class": "documentation_or_aggregate"
     },
     {
+      "path": "outputs/reproduction_v1/MANIFEST.json",
+      "size_bytes": 1331,
+      "sha256": "121d475512322c37ae1d55e74e28dfa6c424ae2f37acbb90c3bc1459cf29ed10",
+      "class": "documentation_or_aggregate"
+    },
+    {
       "path": "outputs/reproduction_v1/TRACE_NUMERIC.jsonl.gz",
       "size_bytes": 506509,
       "sha256": "a930286d62bddf9f4837cb1beb4b863f0f94c1bc697b2311977a9b0eb18f09f7",
@@ -144,8 +150,8 @@
     },
     {
       "path": "scripts/verify_repository.py",
-      "size_bytes": 3408,
-      "sha256": "2ae280a1470a97348edcf5b90680041e256c56ba3810db021275cc9981d620d8",
+      "size_bytes": 3413,
+      "sha256": "ac19a320e2673ddf880abba2e94eb7807d51413e4a46fa8d9aef3c125327e8cd",
       "class": "project_code"
     },
     {
