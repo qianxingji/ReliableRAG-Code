@@ -1,6 +1,6 @@
 {
-  "schema_version": 2,
-  "status": "PUBLIC_NUMERIC_REPRODUCTION_RELEASE",
+  "schema_version": 3,
+  "status": "PUBLIC_HEAD_REFIT_AND_NUMERIC_REPRODUCTION_RELEASE",
   "project_license": "Apache-2.0",
   "repository_name": "ReliableRAG-Code",
   "files": [
@@ -30,32 +30,14 @@
     },
     {
       "path": "CODE_AVAILABILITY.md",
-      "size_bytes": 1015,
-      "sha256": "a77a2555fa6862c939dc6a9a4e7c1d0368a876da45262c356d0a2b9a1b9e7310",
+      "size_bytes": 1156,
+      "sha256": "c688833d8f65cfe02b2afee0691332ccb051a6cd8d87f520177948b1f54e0204",
       "class": "documentation_or_aggregate"
     },
     {
       "path": "DATA.md",
-      "size_bytes": 1680,
-      "sha256": "60eb207db2cccb8c83a5c7c2b0ecec9acd3d4f9faa65872e84c567cefe27535c",
-      "class": "documentation_or_aggregate"
-    },
-    {
-      "path": "docs/CLAIM_EVIDENCE_SUMMARY.md",
-      "size_bytes": 3150,
-      "sha256": "25ef4c154f27021bdd37508a4258e712eb8c8367730f6545c3c6d35ce84c3d92",
-      "class": "documentation_or_aggregate"
-    },
-    {
-      "path": "docs/METHOD.md",
-      "size_bytes": 2737,
-      "sha256": "a16a704e95c50637ba1d804c02cbe0a2b50ee540ce3d6cdea17cb047a88599fb",
-      "class": "documentation_or_aggregate"
-    },
-    {
-      "path": "docs/REPRODUCIBILITY.md",
-      "size_bytes": 2532,
-      "sha256": "1e036c8b914e99954ded2e092b6cc0fd618d335af652b055d619fa4524da0650",
+      "size_bytes": 2119,
+      "sha256": "56ef6b1cf421fda449b83b3ff02f445fc8f87d7b4f31517f7f47cfeffd2e9781",
       "class": "documentation_or_aggregate"
     },
     {
@@ -68,6 +50,36 @@
       "path": "LICENSE_SCOPE.md",
       "size_bytes": 729,
       "sha256": "313db5ad23bfcb1685b5c7df862b5a8acbdf886f6b2cb29b58f8066e0564e2e5",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5413,
+      "sha256": "d3bd08e6342c45fe5b7947ac6f4572951d66faa36b054fba80020f63e769304f",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size_bytes": 4906,
+      "sha256": "7186c75204c5289455fbbb38b60f5196c1a6e797827aa1a39b5e6703f6885c01",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "docs/CLAIM_EVIDENCE_SUMMARY.md",
+      "size_bytes": 3150,
+      "sha256": "25ef4c154f27021bdd37508a4258e712eb8c8367730f6545c3c6d35ce84c3d92",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "size_bytes": 3008,
+      "sha256": "714fa2741bf76fc9aa22415732d721b65c1f067f5d9370b149cf283e1cd05663",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "size_bytes": 2928,
+      "sha256": "627e3a19c56b2f48c936b59e809fdb345f608182cc3d9bd95400e958bec85c6d",
       "class": "documentation_or_aggregate"
     },
     {
@@ -89,9 +101,21 @@
       "class": "documentation_or_aggregate"
     },
     {
+      "path": "outputs/reproduction_v1/CURRENT_HEADS.json",
+      "size_bytes": 12161,
+      "sha256": "a519b80b08ece87c59d296a3b590a1cda31de16122c68a1e0efe5a2c27f1e5ea",
+      "class": "documentation_or_aggregate"
+    },
+    {
+      "path": "outputs/reproduction_v1/DEVELOPMENT_NUMERIC.jsonl.gz",
+      "size_bytes": 415393,
+      "sha256": "8867daa8c8d827d5aa928627d8de068656e35760b47f784c38d328a369afe7f0",
+      "class": "documentation_or_aggregate"
+    },
+    {
       "path": "outputs/reproduction_v1/MANIFEST.json",
-      "size_bytes": 1331,
-      "sha256": "121d475512322c37ae1d55e74e28dfa6c424ae2f37acbb90c3bc1459cf29ed10",
+      "size_bytes": 2019,
+      "sha256": "7d0bf273c2f242e48149aeffb74f938a4c479944ea13c27ecb6e8d370ce6b91e",
       "class": "documentation_or_aggregate"
     },
     {
@@ -105,12 +129,6 @@
       "size_bytes": 687,
       "sha256": "b4fa9a83fc4cd3ad35e45474e7743b53fd99a03d1e32262c5d167af3c5a0fffc",
       "class": "project_code"
-    },
-    {
-      "path": "README.md",
-      "size_bytes": 4692,
-      "sha256": "d6bb752700cc85dba1361bf11aef1cfb4d9514443595aa39f6d542322c508593",
-      "class": "documentation_or_aggregate"
     },
     {
       "path": "requirements-lock.txt",
@@ -132,8 +150,14 @@
     },
     {
       "path": "scripts/reproduce_all.py",
-      "size_bytes": 670,
-      "sha256": "3ebe8c49fd5b4b42acfdb6fdb6a07954dc7db3a3dbfeff5ad3c249be29ca8925",
+      "size_bytes": 716,
+      "sha256": "a7658635cead755ff2f01c56a81f96c1ce9453d94b4224d0100d07cb8684797b",
+      "class": "project_code"
+    },
+    {
+      "path": "scripts/reproduce_current_heads.py",
+      "size_bytes": 4200,
+      "sha256": "706e47cd8ec386590232af6e57fc5f5edd2537faf595f96672f921daf8f923c9",
       "class": "project_code"
     },
     {
@@ -150,8 +174,8 @@
     },
     {
       "path": "scripts/verify_repository.py",
-      "size_bytes": 3413,
-      "sha256": "ac19a320e2673ddf880abba2e94eb7807d51413e4a46fa8d9aef3c125327e8cd",
+      "size_bytes": 5413,
+      "sha256": "75edd3b5a1545f112841ec52ff06e4b4b618eadfed377d43a5896ffbca496483",
       "class": "project_code"
     },
     {
@@ -225,19 +249,13 @@
       "size_bytes": 5036,
       "sha256": "9ec67feb79e60f4c094ca203ea4cfab7d3d2a66ed4b553197c31534d1516074e",
       "class": "project_code"
-    },
-    {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "size_bytes": 4906,
-      "sha256": "7186c75204c5289455fbbb38b60f5196c1a6e797827aa1a39b5e6703f6885c01",
-      "class": "documentation_or_aggregate"
     }
   ],
   "excluded": [
     "benchmark text, original sample identifiers, and answers",
     "generated answers and retrieved passages",
-    "model weights and learned estimators",
-    "development labels and private evidence",
+    "model weights and historical learned estimators",
+    "private forensic evidence",
     "prior Git history"
   ]
 }

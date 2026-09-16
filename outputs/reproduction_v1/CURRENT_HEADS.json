@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "description": "Accepted current Recovery-head fitted parameters and fit metadata",
+  "heads": {
+    "ROA-FULL": {
+      "job_id": "fixed_ROA-FULL",
+      "variant": "ROA-FULL",
+      "head": "R",
+      "feature_dimension": 25,
+      "preprocessing": {
+        "median": [
+          0.6551094719131214,
+          0.5565978049350253,
+          0.5558681593195793,
+          0.5557809683294445,
+          0.5535042813041382,
+          0.533593822031583,
+          0.45676795122434966,
+          1.944220701853434,
+          0.0023093223571777344,
+          0.7919049263000488,
+          0.01423725113272667
+        ],
+        "mean": [
+          0.581221870721762,
+          0.5693108497695388,
+          0.5696843226243838,
+          0.5693479306351635,
+          0.5691875396693618,
+          0.5691426660424296,
+          0.5103991231701719,
+          3.693786817935544,
+          0.008138658365420723,
+          1.6281386341314712,
+          0.07325922672408322
+        ],
+        "std": [
+          0.36537426398620765,
+          0.2777343353907093,
+          0.26392621497431384,
+          0.2769431931710094,
+          0.253628483357111,
+          0.2429265125389722,
+          0.27248036628543787,
+          4.135697958742872,
+          0.27420813502472247,
+          2.503104947004274,
+          0.449029980935305
+        ]
+      },
+      "coef": [
+        0.40566704474168463,
+        -0.5448157512048583,
+        0.165481569039769,
+        0.5084200744247656,
+        -0.5209532779656539,
+        0.026502854687612987,
+        0.6384850478543503,
+        0.20170065741242388,
+        0.13746690422793673,
+        -0.09348962224231924,
+        0.5443065177900991,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.40024752234280736,
+        0.1230707065511999,
+        0.07870410427473473
+      ],
+      "intercept": -1.4968364349456351,
+      "platt_slope": 0.7362322245921428,
+      "platt_intercept": -0.26546989392658327,
+      "base_iterations": [
+        35
+      ],
+      "platt_iterations": [
+        7
+      ],
+      "partition_key_hashes": {
+        "fit": "25e9d0becc2b1659d60224bb84e6956b8efb7953a9030841ce55b177538a2935",
+        "cal": "a1ef988622c753d4d900d8272c7a03eede686b87b0ce1f7a1501afe09984d922",
+        "probe": "35554c40083280f432d0d916af746a6420f737904798db2a3d96f7843dcaf68b"
+      },
+      "design_hashes": {
+        "fit": "7439bff7e4d870ca62937efc932bb73aaf5beb98b68555042b4982550e34048d",
+        "cal": "4004718eda67abb2140cc7fefbcd98a7f9dcde0ffedc981d53bcfeb5f35c76b2",
+        "probe": "e07d165cac0a4b61c28f925d34fa899c54f51909229ad9ddd657e8d44ebb7664"
+      },
+      "target_counts": {
+        "fit": [
+          2015,
+          557
+        ],
+        "cal": [
+          498,
+          132
+        ]
+      },
+      "numeric_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "probe_role": "All opened development features; overlaps fit/cal; no quality evaluation",
+      "ranking": {
+        "platt_slope": 0.7362322245921428,
+        "strict_order_reversal_blocks": 0,
+        "calibrated_tie_blocks": 0,
+        "ranking_unchanged_except_ties": true,
+        "calibrated_ranking_always_used": true
+      }
+    },
+    "ROA-NOGBV": {
+      "job_id": "fixed_ROA-NOGBV",
+      "variant": "ROA-NOGBV",
+      "head": "R",
+      "feature_dimension": 23,
+      "preprocessing": {
+        "median": [
+          0.6551094719131214,
+          0.5565978049350253,
+          0.5558681593195793,
+          0.5557809683294445,
+          0.5535042813041382,
+          0.533593822031583,
+          0.45676795122434966,
+          1.944220701853434,
+          0.0023093223571777344,
+          0.7919049263000488
+        ],
+        "mean": [
+          0.581221870721762,
+          0.5693108497695388,
+          0.5696843226243838,
+          0.5693479306351635,
+          0.5691875396693618,
+          0.5691426660424296,
+          0.5103991231701719,
+          3.693786817935544,
+          0.008138658365420723,
+          1.6281386341314712
+        ],
+        "std": [
+          0.36537426398620765,
+          0.2777343353907093,
+          0.26392621497431384,
+          0.2769431931710094,
+          0.253628483357111,
+          0.2429265125389722,
+          0.27248036628543787,
+          4.135697958742872,
+          0.27420813502472247,
+          2.503104947004274
+        ]
+      },
+      "coef": [
+        0.5092252327302385,
+        -0.39192740907762147,
+        0.21173863445060634,
+        0.33761706566304894,
+        -0.5603333965783236,
+        0.12267779624381142,
+        0.6359132838901912,
+        0.20052134972854624,
+        0.13695746591608118,
+        -0.07987138195612392,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.37367821359788506,
+        0.12278512623808766,
+        0.10959165735064803
+      ],
+      "intercept": -1.4461863026299677,
+      "platt_slope": 0.6895219816086278,
+      "platt_intercept": -0.36414748544491166,
+      "base_iterations": [
+        35
+      ],
+      "platt_iterations": [
+        6
+      ],
+      "partition_key_hashes": {
+        "fit": "25e9d0becc2b1659d60224bb84e6956b8efb7953a9030841ce55b177538a2935",
+        "cal": "a1ef988622c753d4d900d8272c7a03eede686b87b0ce1f7a1501afe09984d922",
+        "probe": "35554c40083280f432d0d916af746a6420f737904798db2a3d96f7843dcaf68b"
+      },
+      "design_hashes": {
+        "fit": "ed197f7c16ad6ac45890cf8d6a4ccf21a5fbeffa885bbecb6ea68d597b6a5bbe",
+        "cal": "7b4194a2906eed6288b5ca1a264d87a723655cd1472e7bb64dd574fac15434bb",
+        "probe": "1eeca7878a3247a29f2a5314d1d9d4e5150a40b21e2073c5b599c3f5b81ebd00"
+      },
+      "target_counts": {
+        "fit": [
+          2015,
+          557
+        ],
+        "cal": [
+          498,
+          132
+        ]
+      },
+      "numeric_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "probe_role": "All opened development features; overlaps fit/cal; no quality evaluation",
+      "ranking": {
+        "platt_slope": 0.6895219816086278,
+        "strict_order_reversal_blocks": 0,
+        "calibrated_tie_blocks": 0,
+        "ranking_unchanged_except_ties": true,
+        "calibrated_ranking_always_used": true
+      }
+    },
+    "HGB_GBV_R": {
+      "job_id": "fixed_HGB_GBV_R",
+      "variant": "HGB_GBV_R",
+      "head": "R",
+      "feature_dimension": 7,
+      "preprocessing": {
+        "median": [
+          0.6551094719131214,
+          0.01423725113272667
+        ],
+        "mean": [
+          0.581221870721762,
+          0.07325922672408322
+        ],
+        "std": [
+          0.36537426398620765,
+          0.449029980935305
+        ]
+      },
+      "coef": [
+        0.6155907882135847,
+        0.57425095802704,
+        0.0,
+        0.0,
+        -0.08425210176939973,
+        0.0930083592707713,
+        0.0020846571407027413
+      ],
+      "intercept": -1.5348755945123524,
+      "platt_slope": 0.8503511873572397,
+      "platt_intercept": -0.13968935591621487,
+      "base_iterations": [
+        17
+      ],
+      "platt_iterations": [
+        8
+      ],
+      "partition_key_hashes": {
+        "fit": "25e9d0becc2b1659d60224bb84e6956b8efb7953a9030841ce55b177538a2935",
+        "cal": "a1ef988622c753d4d900d8272c7a03eede686b87b0ce1f7a1501afe09984d922",
+        "probe": "35554c40083280f432d0d916af746a6420f737904798db2a3d96f7843dcaf68b"
+      },
+      "design_hashes": {
+        "fit": "80558dbf7d438e50f9a413e3c0948ebdf46482eff9277cc80e5ee1a36e886623",
+        "cal": "0af7a7083e3e90cf4f1b49063a4ed9c255b220dd8514bc348bbf978251932167",
+        "probe": "edb7b8d9aa6924c77416cd2f88200cbefd980e49b3a7162e9be3a059a1546d8b"
+      },
+      "target_counts": {
+        "fit": [
+          2015,
+          557
+        ],
+        "cal": [
+          498,
+          132
+        ]
+      },
+      "numeric_indices": [
+        0,
+        10
+      ],
+      "probe_role": "All opened development features; overlaps fit/cal; no quality evaluation",
+      "ranking": {
+        "platt_slope": 0.8503511873572397,
+        "strict_order_reversal_blocks": 0,
+        "calibrated_tie_blocks": 0,
+        "ranking_unchanged_except_ties": true,
+        "calibrated_ranking_always_used": true
+      }
+    },
+    "HGB_ONLY_R": {
+      "job_id": "fixed_HGB_ONLY_R",
+      "variant": "HGB_ONLY_R",
+      "head": "R",
+      "feature_dimension": 5,
+      "preprocessing": {
+        "median": [
+          0.6551094719131214
+        ],
+        "mean": [
+          0.5812218707217607
+        ],
+        "std": [
+          0.36537426398620776
+        ]
+      },
+      "coef": [
+        0.7771621853151391,
+        0.0,
+        -0.07429074581775585,
+        0.07601758314507376,
+        0.02105897600168466
+      ],
+      "intercept": -1.4608993092837503,
+      "platt_slope": 0.9026096797928618,
+      "platt_intercept": -0.11882629059415337,
+      "base_iterations": [
+        13
+      ],
+      "platt_iterations": [
+        8
+      ],
+      "partition_key_hashes": {
+        "fit": "25e9d0becc2b1659d60224bb84e6956b8efb7953a9030841ce55b177538a2935",
+        "cal": "a1ef988622c753d4d900d8272c7a03eede686b87b0ce1f7a1501afe09984d922",
+        "probe": "35554c40083280f432d0d916af746a6420f737904798db2a3d96f7843dcaf68b"
+      },
+      "design_hashes": {
+        "fit": "74202bf13358dc61417515b6675d46442d112dfb1f1ec2254fc6c6404651bda8",
+        "cal": "f02672607d148c86052230f5b058219246676bdf5c9bbe68535f9142a7d51376",
+        "probe": "b119d2124d1c9a1d63fb6e486d46e1602c20746ce7f6360b4925fd479384fcc7"
+      },
+      "target_counts": {
+        "fit": [
+          2015,
+          557
+        ],
+        "cal": [
+          498,
+          132
+        ]
+      },
+      "numeric_indices": [
+        0
+      ],
+      "probe_role": "All opened development features; overlaps fit/cal; no quality evaluation",
+      "ranking": {
+        "platt_slope": 0.9026096797928618,
+        "strict_order_reversal_blocks": 0,
+        "calibrated_tie_blocks": 0,
+        "ranking_unchanged_except_ties": true,
+        "calibrated_ranking_always_used": true
+      }
+    },
+    "GBV_ONLY_R": {
+      "job_id": "fixed_GBV_ONLY_R",
+      "variant": "GBV_ONLY_R",
+      "head": "R",
+      "feature_dimension": 5,
+      "preprocessing": {
+        "median": [
+          0.01423725113272667
+        ],
+        "mean": [
+          0.07325922672408322
+        ],
+        "std": [
+          0.44902998093530483
+        ]
+      },
+      "coef": [
+        0.7290918472318366,
+        0.0,
+        -0.05101575471516556,
+        0.09349809421902333,
+        -0.01707589213154158
+      ],
+      "intercept": -1.4357932467821777,
+      "platt_slope": 0.7575980945399963,
+      "platt_intercept": -0.29026096481576397,
+      "base_iterations": [
+        15
+      ],
+      "platt_iterations": [
+        9
+      ],
+      "partition_key_hashes": {
+        "fit": "25e9d0becc2b1659d60224bb84e6956b8efb7953a9030841ce55b177538a2935",
+        "cal": "a1ef988622c753d4d900d8272c7a03eede686b87b0ce1f7a1501afe09984d922",
+        "probe": "35554c40083280f432d0d916af746a6420f737904798db2a3d96f7843dcaf68b"
+      },
+      "design_hashes": {
+        "fit": "f24d01fdfbf8e1bd40928f4d88cb3518c1116186bd68a37d0267b9047ddf1f8c",
+        "cal": "7691c7ce6a53b5d1fe96905fcee77701793d1658cbad2227b515c2abfa48ce5c",
+        "probe": "a663e350d6d341f8ca33d757356cf09c2a2407a4baea729ed537fea6a502bad5"
+      },
+      "target_counts": {
+        "fit": [
+          2015,
+          557
+        ],
+        "cal": [
+          498,
+          132
+        ]
+      },
+      "numeric_indices": [
+        10
+      ],
+      "probe_role": "All opened development features; overlaps fit/cal; no quality evaluation",
+      "ranking": {
+        "platt_slope": 0.7575980945399963,
+        "strict_order_reversal_blocks": 0,
+        "calibrated_tie_blocks": 0,
+        "ranking_unchanged_except_ties": true,
+        "calibrated_ranking_always_used": true
+      }
+    }
+  }
+}

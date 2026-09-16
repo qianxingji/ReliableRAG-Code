@@ -17,6 +17,7 @@ def run(*args: str) -> None:
 
 def main() -> int:
     run("-m", "unittest", "discover", "-s", "tests", "-v")
+    run("scripts/reproduce_current_heads.py")
     run("scripts/reproduce_paper_statistics.py")
     run("scripts/verify_cas_q3_claim_statistics.py")
     run("scripts/verify_repository.py")

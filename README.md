@@ -11,6 +11,8 @@ ReliableRAG studies a fixed post-generation decision: after the same reader has 
 - the supervision-matched logistic fitting and disjoint calibration procedure used by all five current heads;
 - fixed cohort, eligibility, top-K allocation, and aggregate analysis code;
 - a text-free 18,000-trace numeric bundle with opaque question-group IDs;
+- a text-free 13,500-trace development bundle and the five accepted fitted
+  parameter records, permitting exact refitting of all current Recovery heads;
 - sealed aggregate point estimates and confidence-interval summaries;
 - a standard-library verifier that checks 129 reporting statements; and
 - tests that exercise the released code without downloading models or benchmark data.
@@ -28,12 +30,15 @@ python -m pip install --no-deps -e .
 python scripts/reproduce_all.py
 ```
 
-The workflow rebuilds all nine-policy point estimates and the complete 20,000-draw
+The workflow first refits the five current heads from the released numeric
+development bundle and verifies their preprocessing values, coefficients,
+calibrators, iterations, target counts, and design hashes exactly. It then
+rebuilds all nine-policy point estimates and the complete 20,000-draw
 dataset-stratified question-cluster bootstrap from released trace-level numeric
 records. The rebuilt point estimates and intervals must equal the sealed public
 files exactly. It then runs the unit suite, the 129-statement reporting verifier,
-and the repository-integrity verifier. No command performs a model fit or neural
-forward pass.
+and the repository-integrity verifier. The workflow performs ten CPU logistic
+fits and no neural forward pass.
 
 The trace bundle contains scores, actions, and numeric EM/F1 outcomes. It uses
 dataset-local `qNNNN` group identifiers that preserve the canonical tie order;
@@ -51,15 +56,20 @@ text are absent.
 - `scripts/reproduce_paper_statistics.py`: exact point-estimate and full-bootstrap reconstruction.
 - `outputs/cas_q2/empirical_analysis_v1/`: sealed aggregate results. The historical directory name is retained because its hashes are cited by the verifier; the paper's current target is CAS Q3.
 - `outputs/reproduction_v1/`: compressed text-free trace-level numeric inputs and their release manifest.
+- `outputs/reproduction_v1/DEVELOPMENT_NUMERIC.jsonl.gz`: opaque numeric
+  development features, binary EM outcomes, and frozen fit/calibration roles.
+- `outputs/reproduction_v1/CURRENT_HEADS.json`: accepted preprocessing,
+  coefficient, Platt-calibration, iteration, target-count, and hash records.
 - `docs/`: method, data, reproduction, and Claim boundaries.
 
 ## Data and model boundary
 
 Benchmark questions, contexts, answers, generated candidates, original sample
-identifiers, model weights, learned estimators, indexes, and private forensic
-receipts are not redistributed. The public numeric bundle is sufficient to
-reconstruct the reported selection statistics and bootstrap, but not to rerun
-retrieval, generation, neural scoring, or model fitting. Download benchmark data
+identifiers, model weights, historical learned estimators, indexes, and private
+forensic receipts are not redistributed. The public numeric bundles are
+sufficient to refit the five current logistic heads and reconstruct the reported
+selection statistics and bootstrap, but not to rerun retrieval, generation, or
+neural scoring. Download benchmark data
 and pretrained models from their official sources under their respective terms.
 See `DATA.md`, `THIRD_PARTY_NOTICES.md`, and `docs/REPRODUCIBILITY.md`.
 

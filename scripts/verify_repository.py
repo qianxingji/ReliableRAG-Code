@@ -48,5 +48,23 @@ def main():
     numeric_text=json.dumps(numeric_rows,separators=(',',':'))
     if 'sample_id' in numeric_text or re.search(r'(?<![0-9a-f])[0-9a-f]{24,32}(?![0-9a-f])',numeric_text): raise AssertionError('benchmark-like identifier in numeric release')
     checks+=4
+    development=ROOT/'outputs/reproduction_v1/DEVELOPMENT_NUMERIC.jsonl.gz'
+    with gzip.open(development,'rt',encoding='utf-8',newline='') as stream:
+        development_rows=[json.loads(line) for line in stream]
+    development_schema={'dataset','retriever','group_id','role','eligible','numeric','a0_em','a1_em'}
+    if len(development_rows)!=13500 or any(set(row)!=development_schema for row in development_rows): raise AssertionError('development reproduction schema/count')
+    if len({(row['dataset'],row['group_id']) for row in development_rows})!=4500: raise AssertionError('development group count')
+    if any(not re.fullmatch(r'q[0-9]{4}',row['group_id']) for row in development_rows): raise AssertionError('non-opaque development group ID')
+    if any(row['role'] not in {'fit','cal'} or len(row['numeric'])!=11 for row in development_rows): raise AssertionError('development role/width')
+    fit=[row for row in development_rows if row['role']=='fit' and row['eligible']]
+    cal=[row for row in development_rows if row['role']=='cal' and row['eligible']]
+    if (len(fit),sum(row['a0_em']==0 and row['a1_em']==1 for row in fit))!=(2572,557): raise AssertionError('fit target counts')
+    if (len(cal),sum(row['a0_em']==0 and row['a1_em']==1 for row in cal))!=(630,132): raise AssertionError('calibration target counts')
+    development_text=json.dumps(development_rows,separators=(',',':'))
+    if 'sample_id' in development_text or re.search(r'(?<![0-9a-f])[0-9a-f]{24,32}(?![0-9a-f])',development_text): raise AssertionError('benchmark-like identifier in development release')
+    heads=json.loads((ROOT/'outputs/reproduction_v1/CURRENT_HEADS.json').read_text(encoding='utf-8'))['heads']
+    if set(heads)!={'ROA-FULL','ROA-NOGBV','HGB_GBV_R','HGB_ONLY_R','GBV_ONLY_R'}: raise AssertionError('current-head membership')
+    if any(head['target_counts']!={'fit':[2015,557],'cal':[498,132]} for head in heads.values()): raise AssertionError('current-head target counts')
+    checks+=8
     print(json.dumps({'status':'PASS_CLEAN_PUBLIC_REPOSITORY','checks':checks,'files':len(declared),'scientific_fits':0,'model_forwards':0},indent=2))
 if __name__=='__main__': main()

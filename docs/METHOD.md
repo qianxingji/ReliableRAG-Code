@@ -18,4 +18,9 @@ The GbV component assigns each branch the maximum entailment probability over it
 
 Raw HGB ranks directly by the frozen score. `HGB_ONLY_R` is a separate calibrated L2-logistic Recovery head using HGB, its missingness indicator, and retriever indicators. `HGB_GBV_R` adds the paired GbV margin and its missingness indicator. Neither current head refits historical HGB.
 
-The five current heads use `src/arbitration/empirical_contract.py` for the fixed development split, feature widths, Recovery target, and logistic settings. `src/arbitration/empirical_panel.py` filters each partition to eligible rows, derives imputation and standardization values from eligible fitting rows only, fits the L2-logistic base head, and fits a separate Platt logistic model on disjoint calibration logits. Missingness flags and retriever indicators are not standardized. The released procedure records partition, design, and target hashes but does not include the private fitted parameters or labeled per-question rows.
+The five current heads use `src/arbitration/empirical_contract.py` for the fixed development split, feature widths, Recovery target, and logistic settings. `src/arbitration/empirical_panel.py` filters each partition to eligible rows, derives imputation and standardization values from eligible fitting rows only, fits the L2-logistic base head, and fits a separate Platt logistic model on disjoint calibration logits. Missingness flags and retriever indicators are not standardized. The released procedure records partition, design, and target hashes.
+The numerical fit uses 2,572 eligible rows (557 positive, 2,015 negative), and
+the disjoint Platt calibration uses 630 eligible rows (132 positive, 498
+negative). The released text-free development bundle and accepted parameter
+records permit exact refitting of all five current heads without disclosing
+benchmark text or original sample identifiers.
