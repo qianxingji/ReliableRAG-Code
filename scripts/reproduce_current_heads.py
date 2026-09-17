@@ -11,15 +11,18 @@ from __future__ import annotations
 import gzip
 import json
 from pathlib import Path
+import sys
+
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 import numpy as np
 from threadpoolctl import threadpool_limits
 
-from src.arbitration.empirical_contract import FIELDS
-from src.arbitration.empirical_panel import fit_panel
-
-
-ROOT = Path(__file__).resolve().parents[1]
+from src.arbitration.empirical_contract import FIELDS  # noqa: E402
+from src.arbitration.empirical_panel import fit_panel  # noqa: E402
 BUNDLE = ROOT / "outputs/reproduction_v1/DEVELOPMENT_NUMERIC.jsonl.gz"
 ACCEPTED = ROOT / "outputs/reproduction_v1/CURRENT_HEADS.json"
 

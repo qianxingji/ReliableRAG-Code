@@ -12,8 +12,8 @@
     },
     {
       "path": ".github/workflows/tests.yml",
-      "size_bytes": 554,
-      "sha256": "8bff3509d44d9329cd547eeb861a8ec3d5ba30c7bce8779cddc86dc22c85f0a9",
+      "size_bytes": 377,
+      "sha256": "4f17637ee4bf4bb246b33d1b2fbc50a7d5a67c5b80cca44bd2f217fd331f8b34",
       "class": "project_code"
     },
     {
@@ -156,8 +156,8 @@
     },
     {
       "path": "scripts/reproduce_current_heads.py",
-      "size_bytes": 4200,
-      "sha256": "706e47cd8ec386590232af6e57fc5f5edd2537faf595f96672f921daf8f923c9",
+      "size_bytes": 4303,
+      "sha256": "01a7e3cbd97887ba7dc02fc3d7a0bdf0fad8b18f8de05168fbdba064cc3c2d63",
       "class": "project_code"
     },
     {
