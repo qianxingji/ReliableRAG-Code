@@ -114,8 +114,8 @@
     },
     {
       "path": "outputs/reproduction_v1/MANIFEST.json",
-      "size_bytes": 2110,
-      "sha256": "cc01fdcd394ca496db7d5df0476d346fef67116c48c6d0498e0b69d3b747e7e4",
+      "size_bytes": 2109,
+      "sha256": "5fb29d231213e8def8ddff40956abe68e2fc6742fac86d47549a42bdeb8424a8",
       "class": "documentation_or_aggregate"
     },
     {
