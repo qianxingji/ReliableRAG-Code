@@ -8,8 +8,9 @@ numeric evaluation bundle, a text-free 13,500-trace development bundle, the five
 accepted current-head parameter records, sealed aggregate outputs, and runnable
 tests.
 
-The development bundle permits exact refitting of the five current logistic
-heads, while the evaluation bundle permits exact reconstruction of the reported
+The development bundle permits numerically equivalent refitting of the five
+current logistic heads across the tested platforms, while the evaluation bundle
+permits exact reconstruction of the reported
 point estimates and 20,000-draw bootstrap. Both use opaque group IDs and numeric
 fields only. The repository excludes benchmark text and original IDs, generated
 answer text, retrieved passages, third-party model weights, historical learned

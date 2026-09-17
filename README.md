@@ -12,7 +12,8 @@ ReliableRAG studies a fixed post-generation decision: after the same reader has 
 - fixed cohort, eligibility, top-K allocation, and aggregate analysis code;
 - a text-free 18,000-trace numeric bundle with opaque question-group IDs;
 - a text-free 13,500-trace development bundle and the five accepted fitted
-  parameter records, permitting exact refitting of all current Recovery heads;
+  parameter records, permitting numerically equivalent refitting of all current
+  Recovery heads across the tested platforms;
 - sealed aggregate point estimates and confidence-interval summaries;
 - a standard-library verifier that checks 129 reporting statements; and
 - tests that exercise the released code without downloading models or benchmark data.
@@ -31,8 +32,10 @@ python scripts/reproduce_all.py
 ```
 
 The workflow first refits the five current heads from the released numeric
-development bundle and verifies their preprocessing values, coefficients,
-calibrators, iterations, target counts, and design hashes exactly. It then
+development bundle and verifies their preprocessing values, coefficients, and
+calibrators to a fixed `1e-10` absolute/relative tolerance. Iterations, target
+counts, design hashes, ranking metadata, and the complete eligible probe
+ordering remain exact checks. It then
 rebuilds all nine-policy point estimates and the complete 20,000-draw
 dataset-stratified question-cluster bootstrap from released trace-level numeric
 records. The rebuilt point estimates and intervals must equal the sealed public

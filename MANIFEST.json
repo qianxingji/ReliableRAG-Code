@@ -30,8 +30,8 @@
     },
     {
       "path": "CODE_AVAILABILITY.md",
-      "size_bytes": 1156,
-      "sha256": "c688833d8f65cfe02b2afee0691332ccb051a6cd8d87f520177948b1f54e0204",
+      "size_bytes": 1201,
+      "sha256": "0af935f1e6a7c263f0dc87bc838be583622a39debaa87c1ef37f69d17c575f50",
       "class": "documentation_or_aggregate"
     },
     {
@@ -54,8 +54,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 5413,
-      "sha256": "d3bd08e6342c45fe5b7947ac6f4572951d66faa36b054fba80020f63e769304f",
+      "size_bytes": 5579,
+      "sha256": "043588f40e90fbf68b01ba14a589227a4843b7df9b3a8b762144b8d3116a3816",
       "class": "documentation_or_aggregate"
     },
     {
@@ -72,14 +72,14 @@
     },
     {
       "path": "docs/METHOD.md",
-      "size_bytes": 3008,
-      "sha256": "714fa2741bf76fc9aa22415732d721b65c1f067f5d9370b149cf283e1cd05663",
+      "size_bytes": 3206,
+      "sha256": "a807becebe81492b1f6a254498c4fba68a1bbbf5f3453ab0891c55121c2a9fb5",
       "class": "documentation_or_aggregate"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "size_bytes": 2928,
-      "sha256": "627e3a19c56b2f48c936b59e809fdb345f608182cc3d9bd95400e958bec85c6d",
+      "size_bytes": 3083,
+      "sha256": "f9192bfe1a888a560741df4f67e7ae8f31db5a6c3b964ee898d53c77d7233206",
       "class": "documentation_or_aggregate"
     },
     {
@@ -114,8 +114,8 @@
     },
     {
       "path": "outputs/reproduction_v1/MANIFEST.json",
-      "size_bytes": 2019,
-      "sha256": "7d0bf273c2f242e48149aeffb74f938a4c479944ea13c27ecb6e8d370ce6b91e",
+      "size_bytes": 2110,
+      "sha256": "cc01fdcd394ca496db7d5df0476d346fef67116c48c6d0498e0b69d3b747e7e4",
       "class": "documentation_or_aggregate"
     },
     {
@@ -156,8 +156,8 @@
     },
     {
       "path": "scripts/reproduce_current_heads.py",
-      "size_bytes": 4303,
-      "sha256": "01a7e3cbd97887ba7dc02fc3d7a0bdf0fad8b18f8de05168fbdba064cc3c2d63",
+      "size_bytes": 9322,
+      "sha256": "7a55983e248340ef07662ab1f1e32fa82083482571d98bced999bce298eb2bf2",
       "class": "project_code"
     },
     {

@@ -22,5 +22,8 @@ The five current heads use `src/arbitration/empirical_contract.py` for the fixed
 The numerical fit uses 2,572 eligible rows (557 positive, 2,015 negative), and
 the disjoint Platt calibration uses 630 eligible rows (132 positive, 498
 negative). The released text-free development bundle and accepted parameter
-records permit exact refitting of all five current heads without disclosing
-benchmark text or original sample identifiers.
+records permit numerically equivalent refitting of all five current heads across
+the tested platforms without disclosing benchmark text or original sample
+identifiers. Model parameters use a fixed `1e-10` absolute/relative tolerance;
+design hashes, fit counts, iterations, and complete probe ranking remain exact
+checks.
